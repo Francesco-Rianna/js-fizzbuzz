@@ -16,3 +16,33 @@
 // prendo tutti i numeri da 1 a 100
 
 
+const msContainer = document.querySelector('.ms-container')
+
+for (let i = 0; i <= 100; i++) {
+    // i multipli di 3 dovranno essere stampati al posto del numero con Fizz
+    // i multipli di 5 dovranno essere stampati con buzz 
+    // i multipli sia di 3 che di 5 dovranno essere stampati con FizzBuzz 
+
+    let multipleOfThreeAndFive;
+    if (i % 3 === 0 && i % 5 === 0) {
+        multipleOfThreeAndFive = 'BuzzFizz'
+        console.log(multipleOfThreeAndFive)
+
+    }
+    else {
+        if (i % 3 === 0) {
+            multipleOfThreeAndFive = 'Fizz'
+            console.log(multipleOfThreeAndFive)
+        } else if (i % 5 === 0) {
+            multipleOfThreeAndFive = 'Buzz'
+            console.log(multipleOfThreeAndFive)
+        }
+        else {
+            console.log(i)
+        }
+    }
+
+
+
+}
+
