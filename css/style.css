@@ -1,0 +1,16 @@
+.ms-container {
+    width: 950px;
+    background: blue;
+    margin: 0 auto;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
