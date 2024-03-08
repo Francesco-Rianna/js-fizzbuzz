@@ -2,6 +2,9 @@
     width: 950px;
     background: blue;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box {
@@ -12,5 +15,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.fizz {
+    background: yellow;
+}
+
+.buzz {
+    background: red;
+}
+
+.fizz-buzz {
+    background: black;
 }

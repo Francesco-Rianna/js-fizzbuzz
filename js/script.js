@@ -24,23 +24,32 @@ for (let i = 0; i <= 100; i++) {
     // i multipli sia di 3 che di 5 dovranno essere stampati con FizzBuzz 
 
     let multipleOfThreeAndFive;
+    let colorBox
     if (i % 3 === 0 && i % 5 === 0) {
         multipleOfThreeAndFive = 'BuzzFizz'
-        console.log(multipleOfThreeAndFive)
+        colorBox = 'fizz-buzz'
 
+
+    } else if (i % 3 === 0) {
+        multipleOfThreeAndFive = 'Fizz'
+        colorBox = 'fizz'
+
+    } else if (i % 5 === 0) {
+        multipleOfThreeAndFive = 'Buzz'
+        colorBox = 'buzz'
+    } else {
+        multipleOfThreeAndFive = i
+        colorBox = ''
     }
-    else {
-        if (i % 3 === 0) {
-            multipleOfThreeAndFive = 'Fizz'
-            console.log(multipleOfThreeAndFive)
-        } else if (i % 5 === 0) {
-            multipleOfThreeAndFive = 'Buzz'
-            console.log(multipleOfThreeAndFive)
-        }
-        else {
-            console.log(i)
-        }
-    }
+
+
+    const newBox = `<div class =" box ${colorBox} " > ${multipleOfThreeAndFive} </div> `
+
+    msContainer.innerHTML += newBox
+
+
+
+
 
 
 
